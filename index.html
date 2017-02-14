@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app='pinnacle.ui.sample'>
+	<head>
+		<title>Pinnacle-ui Test</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" />
+		<link rel="stylesheet" href="node_modules/angular-xeditable/dist/css/xeditable.min.css" />
+	</head>
+	<body class="container" p-page>
+		<div class="row">
+			<div p-panel name="header">
+				<p-menu name="menu.top">pinnacle ui test!!</p-menu>
+			</div>
+		</div>
+		<div class="row">
+			<div p-panel name="side">
+				<p-menu name="menu.side"></p-menu>
+			</div>
+			<ui-view></ui-view>
+		</div>
+		<div class="row">
+			<div p-panel name="footer">
+				<p-menu name="menu.footer"></p-menu>
+			</div>
+		</div>
+	</body>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/api-check/dist/api-check.js"></script>
+	<script src="node_modules/angular-formly/dist/formly.js"></script>
+    <script src="node_modules/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+    <script src="node_modules/angular-xeditable/dist/js/xeditable.js"></script>
+	<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+	<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+	<script src="build/dev/pinnacle-ui.dev.js"></script>
+	<script src="src/test/demo.js"></script>
+</html>
